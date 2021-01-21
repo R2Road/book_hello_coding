@@ -10,6 +10,7 @@ namespace ConsoleWrite
             Console.WriteLine("한 줄씩 나옵니다.");
             Console.Write("Write는 아닙니다.");
             Console.Write("이어져서 나오죠?");
+            Console.WriteLine("Write 뒤에 WriteLine을 썼습니다.");
         }
     }
 }
