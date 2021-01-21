@@ -11,6 +11,14 @@ namespace ConsoleWrite
             Console.Write("Write는 아닙니다.");
             Console.Write("이어져서 나오죠?");
             Console.WriteLine("Write 뒤에 WriteLine을 썼습니다.");
+
+            Console.Write("바구니 안에 담긴 사과의 개수: ");
+            Console.WriteLine(12);
+
+            Console.Write("사과 바구니의 무게: ");
+            Console.WriteLine(1.32);
+
+            Console.WriteLine("!!?%$&");
         }
     }
 }
