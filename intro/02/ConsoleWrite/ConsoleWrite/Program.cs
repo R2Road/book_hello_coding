@@ -20,7 +20,8 @@ namespace ConsoleWrite
 
             Console.WriteLine("!!?%$&");
 
-            Console.WriteLine("큰 따옴표" 출력"); // 큰따옴표를 출력하려고 시도
+            Console.WriteLine("큰 따옴표\" 출력"); // 큰따옴표를 출력하려고 시도
+            Console.WriteLine("\\\'\"");
         }
     }
 }
