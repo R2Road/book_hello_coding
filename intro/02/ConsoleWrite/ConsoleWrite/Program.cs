@@ -19,6 +19,8 @@ namespace ConsoleWrite
             Console.WriteLine(1.32);
 
             Console.WriteLine("!!?%$&");
+
+            Console.WriteLine("큰 따옴표" 출력"); // 큰따옴표를 출력하려고 시도
         }
     }
 }
