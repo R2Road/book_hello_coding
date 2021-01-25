@@ -6,6 +6,9 @@ namespace Constant
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(12);
+
+            Console.WriteLine(-2);
         }
     }
 }
