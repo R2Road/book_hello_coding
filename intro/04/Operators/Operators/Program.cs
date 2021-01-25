@@ -16,6 +16,8 @@ namespace Operators
             Console.WriteLine(84 / 10);
             Console.Write("84 % 10 = ");
             Console.WriteLine(84 % 10);
+
+            Console.WriteLine("글" + "붙여쓰기");
         }
     }
 }
