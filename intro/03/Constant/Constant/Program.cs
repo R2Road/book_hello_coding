@@ -9,6 +9,8 @@ namespace Constant
             Console.WriteLine(12);
 
             Console.WriteLine(-2);
+
+            Console.WriteLine(1.32);
         }
     }
 }
