@@ -7,7 +7,10 @@ namespace WrongVariable
         static void Main(string[] args)
         {
             int appleCount = 12;
-            10 = appleCount ;
+            int pearCount;
+
+            Console.WriteLine(appleCount);
+            Console.WriteLine(pearCount);
         }
     }
 }
