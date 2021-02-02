@@ -10,6 +10,12 @@ namespace Variable
             Console.Write(appleCountDescription);
             int appleCount = 12;
             Console.WriteLine(appleCount);
+
+            appleCount = appleCount - 2;
+            appleCountDescription = "내가 먹고 난 뒤에 " + appleCountDescription;
+
+            Console.Write(appleCountDescription);
+            Console.WriteLine(appleCount);
         }
     }
 }
