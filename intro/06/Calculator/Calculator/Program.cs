@@ -22,23 +22,17 @@ namespace Calculator
             {
                 Console.WriteLine(number1 + number2);
             }
-            else
+            else if (inputOperator == "-")
             {
-                if (inputOperator == "-")
-                {
-                    Console.WriteLine(number1 - number2);
-                }
-                else
-                {
-                    if (inputOperator == "*")
-                    {
-                        Console.WriteLine(number1 * number2);
-                    }
-                    if (inputOperator == "/")
-                    {
-                        Console.WriteLine(number1 / number2);
-                    }
-                }
+                Console.WriteLine(number1 - number2);
+            }
+            else if (inputOperator == "*")
+            {
+                Console.WriteLine(number1 * number2);
+            }
+            else if (inputOperator == "/")
+            {
+                Console.WriteLine(number1 / number2);
             }
         }
     }
