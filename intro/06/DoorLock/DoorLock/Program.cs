@@ -14,12 +14,9 @@ namespace DoorLock
             Console.WriteLine("두 번째 숫자를 넣어주세요.");
             int userInput2 = int.Parse(Console.ReadLine());
 
-            if (userInput1 == passcodenumbers1)
+            if (userInput1 == passcodenumbers1 && userInput2 == passcodenumbers2)
             {
-                if (userInput2 == passcodenumbers2)
-                {
-                    Console.WriteLine("문이 열렸습니다.");
-                }
+                Console.WriteLine("문이 열렸습니다.");
             }
         }
     }
