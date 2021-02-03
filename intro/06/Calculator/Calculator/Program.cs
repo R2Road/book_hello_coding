@@ -28,13 +28,16 @@ namespace Calculator
                 {
                     Console.WriteLine(number1 - number2);
                 }
-                if (inputOperator == "*")
+                else
                 {
-                    Console.WriteLine(number1 * number2);
-                }
-                if (inputOperator == "/")
-                {
-                    Console.WriteLine(number1 / number2);
+                    if (inputOperator == "*")
+                    {
+                        Console.WriteLine(number1 * number2);
+                    }
+                    if (inputOperator == "/")
+                    {
+                        Console.WriteLine(number1 / number2);
+                    }
                 }
             }
         }
