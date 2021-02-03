@@ -32,6 +32,18 @@ namespace UltimateBaseball
             Console.WriteLine(number1);
             Console.WriteLine(number2);
             Console.WriteLine(number3);
+
+            Console.WriteLine("> 첫 번째 숫자를 입력하세요.");
+            int guess1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("> 두 번째 숫자를 입력하세요.");
+            int guess2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("> 세 번째 숫자를 입력하세요.");
+            int guess3 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("> 공격수가 고른 숫자");
+            Console.WriteLine(guess1);
+            Console.WriteLine(guess2);
+            Console.WriteLine(guess3);
         }
     }
 }
