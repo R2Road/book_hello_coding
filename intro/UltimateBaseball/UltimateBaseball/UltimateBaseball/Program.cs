@@ -24,24 +24,27 @@ namespace UltimateBaseball
             Console.WriteLine(numbers[2]);
 
             int[] guesses = new int[3];
-            Console.WriteLine("> 첫 번째 숫자를 입력하세요.");
-            guesses[0] = int.Parse(Console.ReadLine());
-            Console.WriteLine("> 두 번째 숫자를 입력하세요.");
-            guesses[1] = int.Parse(Console.ReadLine());
-            Console.WriteLine("> 세 번째 숫자를 입력하세요.");
-            guesses[2] = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("> 공격수가 고른 숫자");
-            Console.WriteLine(guesses[0]);
-            Console.WriteLine(guesses[1]);
-            Console.WriteLine(guesses[2]);
+            while (true)
+            {
+                Console.WriteLine("> 첫 번째 숫자를 입력하세요.");
+                guesses[0] = int.Parse(Console.ReadLine());
+                Console.WriteLine("> 두 번째 숫자를 입력하세요.");
+                guesses[1] = int.Parse(Console.ReadLine());
+                Console.WriteLine("> 세 번째 숫자를 입력하세요.");
+                guesses[2] = int.Parse(Console.ReadLine());
 
-            if (guesses[0] == guesses[1] || guesses[0] == guesses[2] || guesses[1] == guesses[2])
-            {
-                Console.WriteLine("같은 숫자를 입력하면 안 됩니다.");
-            }
-            else
-            {
+                Console.WriteLine("> 공격수가 고른 숫자");
+                Console.WriteLine(guesses[0]);
+                Console.WriteLine(guesses[1]);
+                Console.WriteLine(guesses[2]);
+
+                if (guesses[0] == guesses[1] || guesses[0] == guesses[2] || guesses[1] == guesses[2])
+                {
+                    Console.WriteLine("같은 숫자를 입력하면 안 됩니다.");
+                    continue;
+                }
+
                 int strikeCount = 0;
                 int ballCount = 0;
 
@@ -78,6 +81,12 @@ namespace UltimateBaseball
                 Console.WriteLine(ballCount);
                 Console.Write("아웃: ");
                 Console.WriteLine(3 - ballCount - strikeCount);
+
+                if (guesses[0] == numbers[0] && guesses[1] == numbers[1] && guesses[2] == numbers[2])
+                {
+                    Console.WriteLine("정답입니다.");
+                    break;
+                }
             }
         }
     }
