@@ -7,6 +7,7 @@ namespace DoorLock_6Num_For
         static void Main(string[] args)
         {
             int[] passcodeNumbers = { 6, 2, 1, 9, 4, 7 };
+
             int passcodeLength = 6;
             int[] userInput = new int[passcodeLength];
 
