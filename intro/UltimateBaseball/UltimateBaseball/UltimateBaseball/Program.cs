@@ -41,12 +41,6 @@ namespace UltimateBaseball
                 }
             }
 
-            Console.WriteLine("> 수비수가 고른 숫자");
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine(numbers[i]);
-            }
-
             int[] guesses = new int[3];
             string[] inputMessages = { "> 첫 번째 숫자를 입력하세요.", "> 두 번째 숫자를 입력하세요.", "> 세 번째 숫자를 입력하세요." };
 
